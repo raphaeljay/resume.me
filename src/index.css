@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design System - Tech Resume Theme */
+
+@layer base {
+  :root {
+    /* Light Mode - Clean Professional */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 197 71% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 214 32% 91%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 197 71% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 88%;
+    --input: 214 32% 88%;
+    --ring: 197 71% 52%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(197 71% 52%) 0%, hsl(237 71% 62%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(197 71% 52% / 0.05) 0%, hsl(237 71% 62% / 0.05) 100%);
+    
+    /* Shadows */
+    --shadow-lg: 0 20px 40px -10px hsl(197 71% 52% / 0.15);
+    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.1);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    /* Dark Mode - Tech Professional */
+    --background: 222 47% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 197 71% 52%;
+    --primary-foreground: 222 47% 7%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 197 71% 52%;
+    --accent-foreground: 222 47% 7%;
+
+    --destructive: 0 63% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 197 71% 52%;
+
+    /* Dark Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(197 71% 52%) 0%, hsl(237 71% 62%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(197 71% 52% / 0.1) 0%, hsl(237 71% 62% / 0.1) 100%);
+    
+    /* Dark Shadows */
+    --shadow-lg: 0 20px 40px -10px hsl(197 71% 52% / 0.3);
+    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-tech {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .shadow-card-tech {
+    box-shadow: var(--shadow-card);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
