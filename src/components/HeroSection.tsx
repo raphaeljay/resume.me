@@ -1,4 +1,4 @@
-import { Download, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Download, Linkedin, Mail, Phone, MapPin, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import profileImage from '@/assets/profile.jpg';
 
@@ -71,6 +71,21 @@ const HeroSection = () => {
                 >
                   <Linkedin className="mr-2 h-5 w-5" />
                   LinkedIn Profile
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-primary/50 hover:bg-primary/10 transition-smooth font-semibold"
+                asChild
+              >
+                <a
+                  href="https://github.com/ajemina212"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="mr-2 h-5 w-5" />
+                  GitHub Profile
                 </a>
               </Button>
             </div>
