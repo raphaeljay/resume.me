@@ -7,7 +7,7 @@ const ExperienceSection = () => {
     {
       title: 'IT Infrastructure & Security Specialist',
       company: 'Current Role',
-      period: 'Present',
+      period: 'May 2023 - Present',
       achievements: [
         'Designed and implemented enterprise-grade network infrastructure with VLANs, firewalls, and VPN configurations',
         'Managed virtualized environments using VMware and Proxmox, optimizing resource allocation and performance',
@@ -19,7 +19,7 @@ const ExperienceSection = () => {
     {
       title: 'IT Support Officer',
       company: 'Previous Experience',
-      period: '2020 - 2023',
+      period: 'Oct 2021 - May 2023',
       achievements: [
         'Provided comprehensive technical support for Windows, Linux, and macOS environments',
         'Managed Active Directory, Group Policy, and user access controls for 200+ users',
@@ -31,7 +31,7 @@ const ExperienceSection = () => {
     {
       title: 'Junior Web Developer / Technical Support',
       company: 'Early Career',
-      period: '2018 - 2020',
+      period: 'Apr 2019 - Oct 2019',
       achievements: [
         'Developed and maintained web applications with focus on user experience and performance',
         'Provided first-line technical support and troubleshooting for software and hardware issues',
