@@ -57,7 +57,7 @@ This project includes a GitHub Actions workflow for automatic deployment:
 
 2. **Enable GitHub Pages**:
    - Go to your repository Settings → Pages
-   - Under "Build and deployment", select "GitHub Actions"
+   - Under "Build and deployment", select **"GitHub Actions"**
    - The workflow will automatically deploy on every push to `main`
 
 3. **Access your site**: `https://<username>.github.io/<repository-name>/`
