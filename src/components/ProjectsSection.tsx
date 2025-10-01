@@ -12,6 +12,13 @@ const ProjectsSection = () => {
       tools: ['Python', 'Docker', 'Linux'],
     },
     {
+      icon: CodeXml,
+      title: 'Hardware Inventory Management System',
+      description:
+        'A modern, feature-rich hardware inventory management system built with PHP, MySQL, and Bootstrap 5. This system provides comprehensive tracking, analytics, and management capabilities for IT hardware assets.',
+      tools: ['PHP', 'MySQL', 'Bootstrap', 'Docker', 'Linux'],
+    },
+    {
       icon: Server,
       title: 'Proxmox Home Lab',
       description:
