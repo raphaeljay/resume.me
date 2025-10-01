@@ -1,20 +1,21 @@
 import { Card } from '@/components/ui/card';
 import { Mail, Phone, Linkedin, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { FaTelegram } from 'react-icons/fa';
 
 const ContactSection = () => {
   const contactInfo = [
     {
       icon: Mail,
       label: 'Email',
-      value: 'ajemina212@gmail.com',
-      href: 'mailto:ajemina212@gmail.com',
+      value: 'ajemina@proton.me',
+      href: 'mailto:ajemina@proton.me',
     },
     {
-      icon: Phone,
-      label: 'Phone',
-      value: '+234 8138220410',
-      href: 'tel:+2348138220410',
+    icon: FaTelegram,
+    label: 'Telegram',
+    value: '@ajeminx',
+    href: 'https://t.me/ajeminx',
     },
     {
       icon: Linkedin,
@@ -25,7 +26,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Rivers State, Nigeria',
+      value: 'Nigeria',
       href: null,
     },
   ];
