@@ -1,9 +1,16 @@
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Server, Network, Wifi, ExternalLink } from 'lucide-react';
+import { Server, Network, Wifi, ExternalLink, CodeXml } from 'lucide-react';
 
 const ProjectsSection = () => {
   const projects = [
+    {
+      icon: CodeXml,
+      title: 'Network Automation Toolkit',
+      description:
+        'A comprehensive collection of Python-based network automation tools for network engineers and administrators. This toolkit provides ready-to-use scripts for common network management tasks including device configuration, monitoring, discovery, and documentation.',
+      tools: ['Python', 'Docker', 'Linux'],
+    },
     {
       icon: Server,
       title: 'Proxmox Home Lab',
