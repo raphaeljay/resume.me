@@ -20,7 +20,7 @@ const ContactSection = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/raphael-jamaica',
+      value: 'Raphael Jamaica',
       href: 'https://linkedin.com/in/raphael-jamaica',
     },
     {

@@ -1,6 +1,7 @@
 import { Download, Linkedin, Mail, Phone, MapPin, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import profileImage from '@/assets/profile.jpg';
+import { FaTelegram } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
@@ -34,15 +35,15 @@ const HeroSection = () => {
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span>Rivers State, Nigeria</span>
+                <span>Nigeria</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-primary" />
-                <span>+234 8138220410</span>
-              </div>
+                <FaTelegram className="h-4 w-4 text-primary" />
+                <span>ajeminx</span>
+              </div> 
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>ajemina212@gmail.com</span>
+                <span>ajemina@proton.me</span>
               </div>
             </div>
 
