@@ -1,6 +1,7 @@
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Server, Network, Wifi, ExternalLink, CodeXml } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Server, Network, Wifi, CodeXml, Github } from 'lucide-react';
 
 const ProjectsSection = () => {
   const projects = [
@@ -10,6 +11,7 @@ const ProjectsSection = () => {
       description:
         'A comprehensive collection of Python-based network automation tools for network engineers and administrators. This toolkit provides ready-to-use scripts for common network management tasks including device configuration, monitoring, discovery, and documentation.',
       tools: ['Python', 'Docker', 'Linux'],
+      link: 'https://github.com/raphaeljay/network-automation-toolkit.git',
     },
     {
       icon: CodeXml,
@@ -17,6 +19,7 @@ const ProjectsSection = () => {
       description:
         'A modern, feature-rich hardware inventory management system built with PHP, MySQL, and Bootstrap 5. This system provides comprehensive tracking, analytics, and management capabilities for IT hardware assets.',
       tools: ['PHP', 'MySQL', 'Bootstrap', 'Docker', 'Linux'],
+      link: 'https://github.com/raphaeljay/hardware-inventory.git',
     },
     {
       icon: Server,
@@ -52,19 +55,32 @@ const ProjectsSection = () => {
                 <div className="p-3 rounded-lg gradient-hero group-hover:scale-110 transition-smooth">
                   <project.icon className="h-6 w-6 text-primary-foreground" />
                 </div>
-                <ExternalLink className="h-5 w-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-smooth" />
               </div>
 
               <h3 className="text-xl font-bold mb-3">{project.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">{project.description}</p>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.tools.map((tool, i) => (
                   <Badge key={i} variant="secondary" className="text-xs">
                     {tool}
                   </Badge>
                 ))}
               </div>
+
+              {project.link && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full"
+                  asChild
+                >
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <Github className="h-4 w-4" />
+                    View on GitHub
+                  </a>
+                </Button>
+              )}
             </Card>
           ))}
         </div>
