@@ -18,19 +18,12 @@ const ProjectsSection = () => {
         'A modern, feature-rich hardware inventory management system built with PHP, MySQL, and Bootstrap 5. This system provides comprehensive tracking, analytics, and management capabilities for IT hardware assets.',
       tools: ['PHP', 'MySQL', 'Bootstrap', 'Docker', 'Linux'],
     },
-    {/*
+    {
       icon: Server,
       title: 'Proxmox Home Lab',
       description:
         'Built a comprehensive home lab environment using Proxmox for virtualization. Deployed multiple VMs running various services including Nextcloud for file storage, Pi-hole for network-wide ad blocking, Portainer for container management, and Jellyfin for media streaming. Implemented automated backups and monitoring solutions.',
       tools: ['Proxmox', 'Docker', 'Nextcloud', 'Pi-hole', 'Portainer', 'Jellyfin', 'Linux'],
-    */},
-    {
-      icon: Network,
-      title: 'Enterprise Network Simulation',
-      description:
-        'Designed and simulated a complete enterprise network architecture using Cisco Packet Tracer and GNS3. Implemented multi-site connectivity with VLANs, inter-VLAN routing, OSPF dynamic routing, ACLs for security, and redundancy protocols. Configured firewalls, VPN tunnels, and load balancing for high availability.',
-      tools: ['Cisco', 'GNS3', 'VLANs', 'OSPF', 'VPN', 'Firewalls', 'ACLs'],
     },
     {
       icon: Wifi,
