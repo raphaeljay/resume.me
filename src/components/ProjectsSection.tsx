@@ -11,7 +11,7 @@ const ProjectsSection = () => {
       description:
         'A comprehensive collection of Python-based network automation tools for network engineers and administrators. This toolkit provides ready-to-use scripts for common network management tasks including device configuration, monitoring, discovery, and documentation.',
       tools: ['Python', 'Docker', 'Linux'],
-      link: 'https://github.com/raphaeljay/network-automation-toolkit.git',
+      link: 'https://github.com/raphaeljay/network-automation-toolkit',
     },
     {
       icon: CodeXml,
@@ -19,7 +19,7 @@ const ProjectsSection = () => {
       description:
         'A modern, feature-rich hardware inventory management system built with PHP, MySQL, and Bootstrap 5. This system provides comprehensive tracking, analytics, and management capabilities for IT hardware assets.',
       tools: ['PHP', 'MySQL', 'Bootstrap', 'Docker', 'Linux'],
-      link: 'https://github.com/raphaeljay/hardware-inventory.git',
+      link: 'https://github.com/raphaeljay/hardware-inventory',
     },
     {
       icon: Server,
