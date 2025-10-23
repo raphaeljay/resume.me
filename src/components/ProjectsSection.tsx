@@ -6,6 +6,13 @@ import { Server, Network, Wifi, CodeXml, Github } from 'lucide-react';
 const ProjectsSection = () => {
   const projects = [
     {
+      icon: Server,
+      title: 'Property Management System (PMS)',
+      description:
+        'Currently developing a comprehensive property management system for a service apartment business. Built with Laravel and MySQL, the system handles booking management, guest check-in/check-out, room inventory, billing, reporting, and staff management. Features include real-time availability tracking, automated invoicing, and detailed analytics dashboards.',
+      tools: ['Laravel', 'PHP', 'MySQL', 'JavaScript', 'Bootstrap', 'REST API'],
+    },
+    {
       icon: CodeXml,
       title: 'Network Automation Toolkit',
       description:

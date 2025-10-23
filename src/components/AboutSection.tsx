@@ -1,8 +1,13 @@
 import { Card } from '@/components/ui/card';
-import { Server, Network, Cloud, Shield } from 'lucide-react';
+import { Server, Network, Cloud, Shield, Code } from 'lucide-react';
 
 const AboutSection = () => {
   const highlights = [
+    {
+      icon: Code,
+      title: 'Development',
+      description: 'Laravel & Full-Stack Web',
+    },
     {
       icon: Server,
       title: 'Infrastructure',
@@ -37,10 +42,10 @@ const AboutSection = () => {
             {/* About Text */}
             <Card className="p-8 bg-card border border-border animate-fade-in">
               <p className="text-lg leading-relaxed text-muted-foreground">
-                I am a passionate <span className="text-foreground font-semibold">IT Infrastructure, Network & Support Engineer</span> with
-                hands-on experience in virtualization, cloud technologies, networking, and cybersecurity. My expertise spans across
-                designing and managing enterprise-grade networks, implementing robust security measures, and optimizing IT infrastructure
-                for maximum efficiency and reliability.
+                I am a passionate <span className="text-foreground font-semibold">IT Infrastructure, Network & Full-Stack Developer</span> with
+                hands-on experience in web development, virtualization, cloud technologies, networking, and cybersecurity. My expertise spans across
+                building enterprise applications with <span className="text-foreground font-semibold">Laravel and PHP</span>, designing and managing
+                enterprise-grade networks, implementing robust security measures, and optimizing IT infrastructure for maximum efficiency and reliability.
               </p>
               <p className="text-lg leading-relaxed text-muted-foreground mt-4">
                 Currently upskilling with <span className="text-foreground font-semibold">CCNA</span> and{' '}
@@ -50,7 +55,7 @@ const AboutSection = () => {
             </Card>
 
             {/* Highlights Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
               {highlights.map((item, index) => (
                 <Card
                   key={index}

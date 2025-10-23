@@ -10,11 +10,12 @@ const ExperienceSection = () => {
       period: 'May 2023 - Present',
       achievements: [
         'Designed and implemented enterprise-grade network infrastructure with VLANs, firewalls, and VPN configurations',
+        'Developed a comprehensive Property Management System using Laravel, MySQL, and JavaScript for a service apartment business, featuring booking management, billing automation, and analytics dashboards',
         'Managed virtualized environments using VMware and Proxmox, optimizing resource allocation and performance',
         'Deployed and maintained cybersecurity measures including IDS/IPS, system hardening, and access controls',
         'Provided technical leadership in cloud migration projects to Azure platform',
       ],
-      tags: ['Azure', 'VMware', 'Proxmox', 'Networking', 'Security'],
+      tags: ['Laravel', 'PHP', 'MySQL', 'Azure', 'VMware', 'Proxmox', 'Networking', 'Security'],
     },
     {
       title: 'IT Support Officer',

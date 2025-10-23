@@ -4,6 +4,10 @@ import { Card } from '@/components/ui/card';
 const SkillsSection = () => {
   const skillCategories = [
     {
+      category: 'Web Development',
+      skills: ['Laravel', 'PHP', 'MySQL', 'JavaScript', 'Bootstrap', 'REST API', 'Git', 'MVC Architecture'],
+    },
+    {
       category: 'Networking',
       skills: [
         'TCP/IP',
@@ -34,7 +38,7 @@ const SkillsSection = () => {
     },
     {
       category: 'Tools & Platforms',
-      skills: ['Portainer', 'Nextcloud', 'Pi-hole', 'Jellyfin', 'Docker', 'Git', 'PowerShell', 'Bash'],
+      skills: ['Portainer', 'Nextcloud', 'Pi-hole', 'Jellyfin', 'Docker', 'PowerShell', 'Bash'],
     },
   ];
 
