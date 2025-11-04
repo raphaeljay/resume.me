@@ -4,39 +4,74 @@ import { Card } from '@/components/ui/card';
 const SkillsSection = () => {
   const skillCategories = [
     {
-      category: 'Web Development',
-      skills: ['Laravel', 'PHP', 'MySQL', 'PosgreSQL', '', 'REST API', 'Git', 'MVC Architecture'],
+      category: 'Backend Development',
+      skills: [
+        'PHP',
+        'Laravel',
+        'RESTful APIs',
+        'MySQL',
+        'PostgreSQL',
+        'Redis',
+        'Git',
+        'Composer',
+        'MVC Architecture',
+        'OOP',
+        'Docker',
+      ],
+      featured: true, // Highlight this category
     },
     {
       category: 'Networking',
       skills: [
         'TCP/IP',
         'VLANs',
+        'Routing & Switching',
         'Firewalls',
         'VPN',
-        'Routing & Switching',
         'Network Security',
         'DNS/DHCP',
         'Load Balancing',
       ],
     },
     {
-      category: 'Infrastructure',
-      skills: ['Cisco', 'Ubiquiti', 'pfSense', 'MikroTik', 'Network Design', 'Cabling', 'Wi-Fi Management'],
+      category: 'Infrastructure & Hardware',
+      skills: [
+        'Cisco',
+        'Ubiquiti',
+        'pfSense',
+        'MikroTik',
+        'Network Design',
+        'Structured Cabling',
+        'Wi-Fi Management',
+      ],
     },
     {
       category: 'Cloud & Virtualization',
-      skills: ['Azure', 'VMware', 'Proxmox', , 'Docker'],
+      skills: ['Microsoft Azure', 'VMware ESXi', 'Proxmox', 'Hyper-V', 'Docker', 'Cloud Architecture'],
     },
     {
-      category: 'IT Support',
-      skills: ['Windows Server', 'Linux', 'macOS', 'Active Directory', 'Group Policy', 'Remote Support', 'Troubleshooting'],
+      category: 'Systems Administration',
+      skills: [
+        'Windows Server',
+        'Linux (Ubuntu/CentOS)',
+        'Active Directory',
+        'Group Policy',
+        'PowerShell',
+        'Bash Scripting',
+        'Remote Support',
+      ],
     },
     {
       category: 'Cybersecurity',
-      skills: ['IDS/IPS', 'System Hardening', 'Security Audits', 'Access Control', 'Incident Response', 'Compliance'],
+      skills: [
+        'IDS/IPS',
+        'System Hardening',
+        'Security Audits',
+        'Access Control',
+        'Incident Response',
+        'Compliance (ISO 27001)',
+      ],
     },
-    
   ];
 
   return (
@@ -50,11 +85,20 @@ const SkillsSection = () => {
           {skillCategories.map((category, index) => (
             <Card
               key={index}
-              className="p-6 bg-card border border-border hover:border-primary/50 transition-smooth hover:scale-105 animate-fade-in-up"
+              className={`p-6 bg-card border transition-smooth hover:scale-105 animate-fade-in-up ${
+                category.featured
+                  ? 'border-primary/70 ring-2 ring-primary/20 hover:border-primary'
+                  : 'border-border hover:border-primary/50'
+              }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <h3 className="text-xl font-semibold mb-4 text-primary">
+              <h3 className="text-xl font-semibold mb-4 text-primary flex items-center gap-2">
                 {category.category}
+                {category.featured && (
+                  <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
+                    Featured
+                  </span>
+                )}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIndex) => (
