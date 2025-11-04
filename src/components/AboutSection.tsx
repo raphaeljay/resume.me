@@ -5,28 +5,28 @@ const AboutSection = () => {
   const highlights = [
     {
       icon: Code,
-      title: 'Development',
-      description: 'Laravel & Full-Stack Web',
+      title: "Development",
+      description: "Laravel & Full-Stack Web",
     },
     {
       icon: Server,
-      title: 'Infrastructure',
-      description: 'Virtualization & System Admin',
+      title: "Infrastructure",
+      description: "Virtualization & System Admin",
     },
     {
       icon: Network,
-      title: 'Networking',
-      description: 'Cisco, VLANs, VPN & Firewalls',
+      title: "Networking",
+      description: "Cisco, VLANs, VPN & Firewalls",
     },
     {
       icon: Cloud,
-      title: 'Cloud',
-      description: 'Azure & VMware Expertise',
+      title: "Cloud",
+      description: "Azure & VMware Expertise",
     },
     {
       icon: Shield,
-      title: 'Security',
-      description: 'IDS/IPS & System Hardening',
+      title: "Security",
+      description: "IDS/IPS & System Hardening",
     },
   ];
 
@@ -42,15 +42,35 @@ const AboutSection = () => {
             {/* About Text */}
             <Card className="p-8 bg-card border border-border animate-fade-in">
               <p className="text-lg leading-relaxed text-muted-foreground">
-                I am a passionate <span className="text-foreground font-semibold">IT Infrastructure, Network & Full-Stack Developer</span> with
-                hands-on experience in web development, virtualization, cloud technologies, networking, and cybersecurity. My expertise spans across
-                building enterprise applications with <span className="text-foreground font-semibold">Laravel and PHP</span>, designing and managing
-                enterprise-grade networks, implementing robust security measures, and optimizing IT infrastructure for maximum efficiency and reliability.
+                I am an{" "}
+                <span className="text-foreground font-semibold">
+                  IT Infrastructure & Network Engineer
+                </span>{" "}
+                with strong backend development capabilities in{" "}
+                <span className="text-foreground font-semibold">
+                  PHP and Laravel
+                </span>
+                . I combine deep infrastructure knowledge with software
+                development skills to build automated solutions, monitoring
+                tools, and custom applications that enhance operational
+                efficiency.
               </p>
               <p className="text-lg leading-relaxed text-muted-foreground mt-4">
-                Currently upskilling with <span className="text-foreground font-semibold">CCNA</span> and{' '}
-                <span className="text-foreground font-semibold">Azure (AZ-104)</span> certifications, I'm committed to staying at the
-                forefront of technology and delivering innovative solutions that drive business success.
+                My expertise spans designing enterprise-grade networks,
+                implementing robust security measures, optimizing IT
+                infrastructure, and developing scalable backend applications. I
+                bridge the gap between infrastructure and development, creating
+                solutions that are both technically sound and business-driven.
+              </p>
+              <p className="text-lg leading-relaxed text-muted-foreground mt-4">
+                Currently advancing my skills with{" "}
+                <span className="text-foreground font-semibold">CCNA</span> and{" "}
+                <span className="text-foreground font-semibold">
+                  Azure (AZ-104)
+                </span>{" "}
+                certifications, I'm committed to staying at the forefront of
+                technology and delivering innovative solutions that drive
+                business success.
               </p>
             </Card>
 
@@ -67,7 +87,9 @@ const AboutSection = () => {
                       <item.icon className="h-6 w-6 text-primary-foreground" />
                     </div>
                     <h3 className="font-semibold text-lg">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {item.description}
+                    </p>
                   </div>
                 </Card>
               ))}

@@ -5,7 +5,7 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       category: 'Web Development',
-      skills: ['Laravel', 'PHP', 'MySQL', 'JavaScript', 'Bootstrap', 'REST API', 'Git', 'MVC Architecture'],
+      skills: ['Laravel', 'PHP', 'MySQL', 'PosgreSQL', '', 'REST API', 'Git', 'MVC Architecture'],
     },
     {
       category: 'Networking',
@@ -26,7 +26,7 @@ const SkillsSection = () => {
     },
     {
       category: 'Cloud & Virtualization',
-      skills: ['Azure', 'VMware', 'Proxmox', 'Hyper-V', 'Virtual Machines', 'Cloud Migration'],
+      skills: ['Azure', 'VMware', 'Proxmox', , 'Docker'],
     },
     {
       category: 'IT Support',
@@ -36,10 +36,7 @@ const SkillsSection = () => {
       category: 'Cybersecurity',
       skills: ['IDS/IPS', 'System Hardening', 'Security Audits', 'Access Control', 'Incident Response', 'Compliance'],
     },
-    {
-      category: 'Tools & Platforms',
-      skills: ['Portainer', 'Nextcloud', 'Pi-hole', 'Jellyfin', 'Docker', 'PowerShell', 'Bash'],
-    },
+    
   ];
 
   return (

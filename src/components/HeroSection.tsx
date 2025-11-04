@@ -5,7 +5,10 @@ import { FaTelegram } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-16">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center pt-16"
+    >
       <div className="container mx-auto px-4 py-20">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           {/* Profile Image */}
@@ -27,7 +30,11 @@ const HeroSection = () => {
                 Jamaica Raphael <span className="text-primary">Ajemina</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground font-medium">
-                IT Infrastructure | Network Engineer | Cloud & Security Enthusiast
+                IT Infrastructure & Network Engineer | Backend Developer
+              </p>
+              <p className="text-base md:text-lg text-muted-foreground/80 italic pt-1">
+                Bridging infrastructure and development for robust, scalable
+                solutions
               </p>
             </div>
 
@@ -40,7 +47,7 @@ const HeroSection = () => {
               <div className="flex items-center gap-2">
                 <FaTelegram className="h-4 w-4 text-primary" />
                 <span>ajeminx</span>
-              </div> 
+              </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
                 <span>ajemina@proton.me</span>
@@ -54,7 +61,10 @@ const HeroSection = () => {
                 className="gradient-hero shadow-tech hover:shadow-lg hover:scale-105 transition-smooth font-semibold"
                 asChild
               >
-                <a href="/resume.pdf" download="Jamaica_Raphael_Ajemina_Resume.pdf">
+                <a
+                  href="/resume.pdf"
+                  download="Jamaica_Raphael_Ajemina_Resume.pdf"
+                >
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </a>
