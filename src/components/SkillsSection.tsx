@@ -18,7 +18,7 @@ const SkillsSection = () => {
         'OOP',
         'Docker',
       ],
-      featured: true, // Highlight this category
+      featured: false, // Highlight this category
     },
     {
       category: 'Networking',
