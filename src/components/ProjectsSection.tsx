@@ -11,7 +11,7 @@ const ProjectsSection = () => {
       description:
         'Full-stack property management application for service apartments built with Laravel. Features include real-time room availability, automated guest check-in/check-out workflows, dynamic pricing engine, integrated billing and invoicing, staff role management with RBAC, and comprehensive analytics dashboards. Implements RESTful API architecture with secure authentication.',
       tools: ['Laravel', 'PHP', 'MySQL', 'JavaScript', 'Bootstrap', 'REST API', 'JWT Auth'],
-      featured: true,
+      featured: false,
       // link: 'https://github.com/raphaeljay/property-management-system', // Add when available
     },
     {
