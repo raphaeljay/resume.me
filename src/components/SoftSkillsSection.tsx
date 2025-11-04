@@ -1,48 +1,58 @@
 import { Card } from '@/components/ui/card';
-import { Brain, Users, Clock, Wrench, Lightbulb, Target } from 'lucide-react';
+import { Brain, Users, Clock, Wrench, Lightbulb, Target, MessageSquare, TrendingUp } from 'lucide-react';
 
 const SoftSkillsSection = () => {
   const softSkills = [
     {
       icon: Brain,
-      title: 'Critical Thinking',
-      description: 'Analytical problem-solving approach',
+      title: 'Problem Solving',
+      description: 'Analytical debugging and root cause analysis',
     },
     {
       icon: Users,
-      title: 'Collaboration',
-      description: 'Effective team communication',
+      title: 'Team Collaboration',
+      description: 'Cross-functional teamwork and communication',
     },
     {
       icon: Clock,
       title: 'Time Management',
-      description: 'Efficient project prioritization',
+      description: 'Agile prioritization and deadline delivery',
     },
     {
       icon: Wrench,
-      title: 'Troubleshooting',
-      description: 'Quick issue identification & resolution',
+      title: 'Technical Troubleshooting',
+      description: 'Rapid issue diagnosis and resolution',
     },
     {
       icon: Lightbulb,
-      title: 'Adaptability',
-      description: 'Learning new technologies rapidly',
+      title: 'Continuous Learning',
+      description: 'Quick adaptation to new technologies',
     },
     {
       icon: Target,
       title: 'Attention to Detail',
-      description: 'Precision in implementation',
+      description: 'Precision in code and infrastructure',
+    },
+    {
+      icon: MessageSquare,
+      title: 'Clear Communication',
+      description: 'Technical concepts to non-technical stakeholders',
+    },
+    {
+      icon: TrendingUp,
+      title: 'Process Improvement',
+      description: 'Automation and efficiency optimization',
     },
   ];
 
   return (
-    <section id="soft-skills" className="py-20">
+    <section id="soft-skills" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Soft <span className="text-primary">Skills</span>
+          Professional <span className="text-primary">Competencies</span>
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {softSkills.map((skill, index) => (
             <Card
               key={index}
@@ -54,7 +64,9 @@ const SoftSkillsSection = () => {
                   <skill.icon className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-bold text-lg">{skill.title}</h3>
-                <p className="text-sm text-muted-foreground">{skill.description}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {skill.description}
+                </p>
               </div>
             </Card>
           ))}
