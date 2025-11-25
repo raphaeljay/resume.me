@@ -1,48 +1,73 @@
-import { Card } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Server, Wifi, CodeXml, Github, ExternalLink } from 'lucide-react';
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Server, Wifi, CodeXml, Github, ExternalLink } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
     {
       icon: CodeXml,
-      title: 'Property Management System (PMS)',
+      title: "Lodgr (PMS)",
       description:
-        'Full-stack property management application for service apartments built with Laravel. Features include real-time room availability, automated guest check-in/check-out workflows, dynamic pricing engine, integrated billing and invoicing, staff role management with RBAC, and comprehensive analytics dashboards. Implements RESTful API architecture with secure authentication.',
-      tools: ['Laravel', 'PHP', 'MySQL', 'JavaScript', 'Bootstrap', 'REST API', 'JWT Auth'],
+        "Full-stack property management application for service apartments built with Laravel. Features include real-time room availability, automated guest check-in/check-out workflows, dynamic pricing engine, integrated billing and invoicing, staff role management with RBAC, and comprehensive analytics dashboards. Implements RESTful API architecture with secure authentication.",
+      tools: [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "Bootstrap",
+        "REST API",
+        "JWT Auth",
+      ],
       featured: false,
-      // link: 'https://github.com/raphaeljay/property-management-system', // Add when available
+      link: "https://lodgr.laravel.cloud",
     },
     {
       icon: CodeXml,
-      title: 'Hardware Inventory Management System',
+      title: "Hardware Inventory Management System",
       description:
-        'Modern inventory management system with comprehensive tracking, analytics, and reporting capabilities for IT hardware assets. Features barcode scanning, automated depreciation calculations, maintenance scheduling, and export functionality. Built with responsive design and Docker containerization for easy deployment.',
-      tools: ['PHP', 'MySQL', 'Bootstrap 5', 'Docker', 'REST API', 'Linux'],
-      link: 'https://github.com/raphaeljay/hardware-inventory',
+        "Modern inventory management system with comprehensive tracking, analytics, and reporting capabilities for IT hardware assets. Features barcode scanning, automated depreciation calculations, maintenance scheduling, and export functionality. Built with responsive design and Docker containerization for easy deployment.",
+      tools: ["PHP", "MySQL", "Bootstrap 5", "Docker", "REST API", "Linux"],
+      link: "https://github.com/raphaeljay/hardware-inventory",
     },
     {
       icon: CodeXml,
-      title: 'Network Automation Toolkit',
+      title: "Network Automation Toolkit",
       description:
-        'Open-source collection of Python-based automation scripts for network engineers. Includes device configuration management, automated backup systems, network discovery tools, compliance checking, and detailed documentation generators. Containerized with Docker for consistent deployment across environments.',
-      tools: ['Python', 'Docker', 'Linux', 'Git', 'Bash'],
-      link: 'https://github.com/raphaeljay/network-automation-toolkit',
+        "Open-source collection of Python-based automation scripts for network engineers. Includes device configuration management, automated backup systems, network discovery tools, compliance checking, and detailed documentation generators. Containerized with Docker for consistent deployment across environments.",
+      tools: ["Python", "Docker", "Linux", "Git", "Bash"],
+      link: "https://github.com/raphaeljay/network-automation-toolkit",
     },
     {
       icon: Server,
-      title: 'Proxmox Home Lab Infrastructure',
+      title: "Proxmox Home Lab Infrastructure",
       description:
-        'Enterprise-grade virtualization lab featuring 15+ VMs and containers. Deployed self-hosted services including Nextcloud (file storage/collaboration), Pi-hole (DNS-based ad blocking), Portainer (container orchestration), Jellyfin (media server), and monitoring stack (Grafana + Prometheus). Implemented automated backup strategy and infrastructure-as-code using Ansible.',
-      tools: ['Proxmox', 'Docker', 'Ansible', 'Linux', 'Nextcloud', 'Pi-hole', 'Grafana', 'Nginx'],
+        "Enterprise-grade virtualization lab featuring 15+ VMs and containers. Deployed self-hosted services including Nextcloud (file storage/collaboration), Pi-hole (DNS-based ad blocking), Portainer (container orchestration), Jellyfin (media server), and monitoring stack (Grafana + Prometheus). Implemented automated backup strategy and infrastructure-as-code using Ansible.",
+      tools: [
+        "Proxmox",
+        "Docker",
+        "Ansible",
+        "Linux",
+        "Nextcloud",
+        "Pi-hole",
+        "Grafana",
+        "Nginx",
+      ],
     },
     {
       icon: Wifi,
-      title: 'Hotel Wi-Fi & Network Infrastructure',
+      title: "Hotel Wi-Fi & Network Infrastructure",
       description:
-        'Designed and deployed secure, scalable wireless and wired network infrastructure for hospitality facility. Implemented Ubiquiti UniFi ecosystem with VLAN segmentation (guest, staff, IoT networks), pfSense firewall with captive portal authentication, bandwidth management via QoS policies, and centralized monitoring with real-time alerts and reporting.',
-      tools: ['Ubiquiti UniFi', 'pfSense', 'VLANs', 'Captive Portal', 'QoS', 'RADIUS', 'Network Monitoring'],
+        "Designed and deployed secure, scalable wireless and wired network infrastructure for hospitality facility. Implemented Ubiquiti UniFi ecosystem with VLAN segmentation (guest, staff, IoT networks), pfSense firewall with captive portal authentication, bandwidth management via QoS policies, and centralized monitoring with real-time alerts and reporting.",
+      tools: [
+        "Ubiquiti UniFi",
+        "pfSense",
+        "VLANs",
+        "Captive Portal",
+        "QoS",
+        "RADIUS",
+        "Network Monitoring",
+      ],
     },
   ];
 
@@ -59,8 +84,8 @@ const ProjectsSection = () => {
               key={index}
               className={`p-6 bg-card border transition-smooth hover:scale-105 group animate-fade-in-up ${
                 project.featured
-                  ? 'border-primary/70 ring-2 ring-primary/20 hover:border-primary'
-                  : 'border-border hover:border-primary/50'
+                  ? "border-primary/70 ring-2 ring-primary/20 hover:border-primary"
+                  : "border-border hover:border-primary/50"
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -89,7 +114,12 @@ const ProjectsSection = () => {
               </div>
 
               {project.link && (
-                <Button variant="outline" size="sm" className="w-full group/btn" asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full group/btn"
+                  asChild
+                >
                   <a
                     href={project.link}
                     target="_blank"
