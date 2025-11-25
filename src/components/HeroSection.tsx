@@ -1,7 +1,7 @@
-import { Download, Linkedin, Mail, Phone, MapPin, Github } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import profileImage from '@/assets/profile.jpg';
-import { FaTelegram } from 'react-icons/fa';
+import { Download, Linkedin, Mail, Phone, MapPin, Github } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import profileImage from "@/assets/profile.png";
+import { FaTelegram } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
